@@ -8,6 +8,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Mobi-Clone</title>
     <meta name="description" content="Snooze Proof Alarm Clock" />
     <meta name="author" content="A.W." />
@@ -16,9 +21,10 @@
   </head>
 
   <body>
+    <script src="js/scripts.js"></script>
     <!-- Side Nav-->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      <a href="javascript:void(0)" class="closebtn" onclick="close_nav()"
         >&times;</a
       >
       <a onclick="change_page('alarm')">
@@ -39,7 +45,7 @@
 
       <!-- Hamburger-->
       <div class="nav_bar">
-        <div class="container" onclick="openNav()">
+        <div class="container" onclick="open_nav()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -83,16 +89,77 @@
         </div>
       </div>
       <!-- Alarm Box-->
+      <div class="set_alarm_page">
+        <div class="time_dial">
+          <input type="time" id="time_input" name="time_input" required />
+        </div>
+        <div class="weekday">
+          <span id="Mo"></span><div class="bg_weekday">Mo</div></span>
+          <span id="Di"><ins><b>Di</b></ins></span>
+          <span id="Mi"><ins>Mi</ins></span>
+          <span id="Do">Do</span>
+          <span id="Fr">Fr</span>
+          <span id="Sa">Sa</span>
+          <span id="So">So</span>
+        </div>
+
+        <div class="name_input">
+          <div class="name_input_icon">
+            <span class="material-icons" style="font-size: 36px">create</span>
+          </div>
+          <div class="name_input_field">
+            <div style="text-align: left"><span>Alarm name</span></div>
+            <div><input type="text" /></div>
+          </div>
+        </div>
+        <div></div>
+
+        <div class="soft_alarm">
+          <div class="">
+            <span class="material-icons" style="font-size: 36px">
+              volume_down
+            </span>
+          </div>
+          <div class="soft_alarm_radio">
+            <div style="text-align: left"><span>Soft Start</span></div>
+            <div class="soft_switch">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="sound_track">
+          <div class="">
+            <span class="material-icons" style="font-size: 36px">
+              audiotrack
+            </span>
+          </div>
+          <div class="sound_drop_box">
+            <div style="text-align: left">
+              <label for="cars">Sound Track:</label>
+            </div>
+            <div>
+              <select id="cars" name="cars">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Plus Add Alarm-->
-      <a class="float" onclick="add_alarm()"
-        ><span id="plus" class="material-icons"> add </span></a
-      >
+      <a class="float" onclick="add_alarm()">
+        <span id="plus" class="material-icons"> add </span>
+      </a>
       <!-- Plus Add Alarm-->
 
       <!-- End smartphone / tablet look -->
     </div>
-
-    <script></script>
   </body>
 </html>

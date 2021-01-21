@@ -1,6 +1,10 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #154;
+}
+
+.disable {
+  display: none;
 }
 
 .mobile-container {
@@ -264,6 +268,64 @@ input:checked + .slider:before {
 
 /* ############ Alarm Page Start ############ */
 .alarm_page {
-  display: block;
+  display: none;
 }
 /* ############ Alarm Page End ############ */
+
+.set_alarm_page {
+  text-align: left;
+}
+
+.time_dial {
+  background-color: cyan;
+  padding: 6%;
+  text-align: center;
+}
+
+.name_input {
+  background-color: lightcoral;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.name_input_icon {
+  text-align: left;
+}
+
+.name_input_field {
+}
+
+.soft_alarm {
+  background-color: lightcoral;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30%;
+  margin-top: 2.5%;
+}
+
+.soft_alarm_radio {
+  text-align: left;
+}
+
+.soft_switch {
+  margin-left: -30%;
+}
+
+.sound_track {
+  background-color: lightcoral;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30%;
+  margin-top: 2.5%;
+}
+
+.weekday {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.4pc;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-align: center;
+}
