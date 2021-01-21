@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Mobi-Clone</title>
+    <meta name="description" content="Snooze Proof Alarm Clock" />
+    <meta name="author" content="A.W." />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <!-- Side Nav-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a onclick="change_page('alarm')">
+        <span class="material-icons"> alarm </span>Alarm
+      </a>
+      <a onclick="change_page('sleep_qlt')">
+        <span class="material-icons"> nights_stay </span>Sleep Quality
+      </a>
+      <a onclick="change_page('led')">
+        <span class="material-icons"> online_prediction </span>LED Settings
+      </a>
+    </div>
+    <!-- Side Nav-->
+
+    <!-- Simulate a smartphone / tablet -->
+    <div id="main" class="mobile-container">
+      <!-- -->
+
+      <!-- Hamburger-->
+      <div class="nav_bar">
+        <div class="container" onclick="openNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <!-- Hamburger-->
+
+      <!-- Alarm Page-->
+      <div class="alarm_page">
+        <!-- Alarm Box-->
+        <div class="alarm_box">
+          <div class="alarm_content">
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+
+            <div class="alarm_time">
+              <div>10 AM</div>
+              <div>Mo - Fr</div>
+            </div>
+
+            <div class="info_icons">Icon</div>
+          </div>
+
+          <div class="alarm_content">
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+
+            <div class="alarm_time">
+              <div>9 PM</div>
+              <div>Mo - Fr</div>
+            </div>
+
+            <div class="info_icons">Icon</div>
+          </div>
+        </div>
+      </div>
+      <!-- Alarm Box-->
+
+      <!-- Plus Add Alarm-->
+      <a class="float" onclick="add_alarm()"
+        ><span id="plus" class="material-icons"> add </span></a
+      >
+      <!-- Plus Add Alarm-->
+
+      <!-- End smartphone / tablet look -->
+    </div>
+
+    <script></script>
+  </body>
+</html>

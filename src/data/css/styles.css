@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #154;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  min-height: 500px;
+  height: max-content;
+  border-radius: 10px;
+}
+
+/* ############ Menu Icons Start ############ */
+.icon-bar {
+  max-height: max-content;
+  width: max-content; /* Set a specific width */
+  padding-left: 6px;
+  background-color: #555; /* Dark-grey background */
+}
+
+.icon-bar.closed {
+  display: none;
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 5px; /* Add some padding */
+  transition: all 0.4s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+  height: 50px;
+  width: 50px;
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #4caf50; /* Add an active/current color */
+}
+/* ############ Menu Icons End ############ */
+
+/* ############ Hamburger Start ############ */
+.nav_bar {
+  width: 100%;
+  height: max-content;
+  background-color: #0c9;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* ############ Hamburger End ############ */
+
+/* ############ side navigation menu Start ############ */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  white-space: nowrap; /* Disable horizontal scroll */
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  height: max-content;
+  overflow: hidden;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* ############ side navigation menu End ############ */
+
+/* ############ Icons ############ */
+.material-icons {
+  font-size: 48px;
+}
+/* ############ Icons ############ */
+
+/* ############ Plus Add Alarm Start ############ */
+#plus {
+  font-size: 48px;
+  margin-top: 6px;
+  margin-left: 2px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+/* ############ Plus Add Alarm End ############ */
+
+/* ############ Alarm Box Start ############ */
+.alarm_box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.alarm_content {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  background-color: chocolate;
+  align-items: center;
+}
+
+.alarm_time {
+  margin: 20px;
+  margin-left: 50px;
+  padding: 20px;
+  background-color: darkkhaki;
+}
+
+.info_icons {
+  margin: 20px;
+  margin-left: 150px;
+  padding: 20px;
+  background-color: coral;
+}
+
+/* ############ Alarm Box End ############ */
+
+/* ############ Slide Switch Start ############ */
+.switch {
+  left: 20px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* ############ Slide Switch End ############ */
+
+/* ############ Alarm Page Start ############ */
+.alarm_page {
+  display: block;
+}
+/* ############ Alarm Page End ############ */
